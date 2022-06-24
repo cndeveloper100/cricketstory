@@ -8,7 +8,7 @@ const UserBlogs = () => {
 
   const sendRequest = async () => {
     const res = await axios
-      .get(`http://localhost:8000/api/blog/user/${id}`)
+      .get(`https://cricketstory.herokuapp.com/${id}`)
       .catch((err) => console.log(err));
     const data = await res.data;
     return data;

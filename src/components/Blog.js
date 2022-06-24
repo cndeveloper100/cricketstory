@@ -23,7 +23,7 @@ const Blog = ({ title, description, imageURL, userName, isUser, id }) => {
   };
   const deleteRequest = async () => {
     const res = await axios
-      .delete(`http://localhost:8000/api/blog/${id}`)
+      .delete(`https://cricketstory.herokuapp.com/${id}`)
       .catch((err) => console.log(err));
     const data = await res.data;
     return data;

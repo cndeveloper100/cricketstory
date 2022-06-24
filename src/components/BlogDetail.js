@@ -20,7 +20,7 @@ const BlogDetail = () => {
   console.log(id);
   const fetchDetails = async () => {
     const res = await axios
-      .get(`http://localhost:8000/api/blog/${id}`)
+      .get(`https://cricketstory.herokuapp.com/${id}`)
       .catch((err) => console.log(err));
     const data = await res.data;
     return data;
@@ -37,7 +37,7 @@ const BlogDetail = () => {
 
   const sendRequest = async () => {
     const res = await axios
-      .put(`http://localhost:8000/api/blog/update/${id}`, {
+      .put(`https://cricketstory.herokuapp.com/${id}`, {
         title: inputs.title,
         description: inputs.description,
       })

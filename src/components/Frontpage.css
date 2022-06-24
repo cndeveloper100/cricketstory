@@ -1,0 +1,21 @@
+.backgroundImage{
+   background-image: url("https://i.pinimg.com/736x/e9/8c/d2/e98cd2bd553a14d95a5230d0ffdace15.jpg");
+     
+      height:100vh;
+      background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+       width: 100%;
+       background-size: 100% 100%;
+       position: fixed;
+    
+              
+}
+h1{
+   color: rgb(255, 0, 0);
+   font-weight: bolder;
+}
+p{ font-weight: bolder;
+   margin-top: 20px;
+   margin-left: 50px;
+}
